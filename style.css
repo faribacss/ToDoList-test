@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(90deg, lightblue, rgb(93, 93, 168));
+}
+.head{
+    background-color: rgba(15, 1, 1, 0.74);
+    padding: 10px;
+    margin: 10px auto;
+    border: 3px dotted #8bc1e6;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.title{
+    font-size: 50px;
+    padding: 0 20px;    
+    color: white;
+    font-family: rain;
+}
+
+.form{
+    background-color: rgb(241, 232, 232);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dotted rgb(52, 67, 146);
+    border-radius: 30px;
+}
+
+.add-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 10px;
+    outline: none;
+    background-color: #8bc2e644;
+}
+
+.add-text::placeholder{
+    color: rgb(51, 50, 50);
+    font-family: rain;
+}
+
+.btn{
+    position: relative;
+    left: 150px;
+    bottom: 31px;
+    padding: 7px 15px;
+    border: none;
+    background-color: rgb(233, 75, 101);
+    color: #fff;
+    font-family: rain;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    bottom: 35px;
+    padding: 0 3px;
+}
+.list{
+    list-style-type: none;
+}
+
+li{
+    margin: 25px;
+    margin-left: 0;
+    position: relative;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -40px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    -moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+    border-radius: 100%;
+}
+
+input[type=checkbox]:before{
+	font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent !important;
+    background: #ebc6bb;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    margin-right: 7px;
+    border-radius: 100%;
+}
+
+input[type=checkbox]:checked:before {
+	color: black !important;
+}
+
+.description{
+    position: inherit;
+    right: 20px;
+    bottom: 1px;
+}
+
+.delete{
+    font-family: strawberry;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    background-color: #f3ac9f;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 195px;
+}
+
+.search{
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+    background-color: #d0e7d0;
+    outline: none;
+}
+.search::placeholder{
+    color: rgb(87, 83, 83);
+    font-family: rain;
+    font-size: 13px;
+}
+.search-butt{
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+    background-color: #44ad5f;
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* .description.active{
+    text-decoration: line-through;
+    color:gray;
+} */
